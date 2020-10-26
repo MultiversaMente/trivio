@@ -1,6 +1,6 @@
 <template>
-  <div class="app-body bg-brand-dark">
-    <header class="container mx-auto text-white">
+  <div class="flex flex-col h-screen overflow-auto app-body bg-brand-dark">
+    <header class="container flex-none mx-auto text-white">
       <nav class="flex items-center justify-between h-16">
         <IconBase icon-name="trivio" class="h-full px-4 py-2 text-white" />
 
@@ -10,6 +10,6 @@
         </div>
       </nav>
     </header>
-    <Nuxt />
+    <Nuxt class="flex-1" />
   </div>
 </template>
