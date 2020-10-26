@@ -1,7 +1,9 @@
 export default {
   // Target (https://go.nuxtjs.dev/config-target)
   target: 'static',
-
+  router: {
+    base: '/trivio/',
+  },
   // Global page headers (https://go.nuxtjs.dev/config-head)
   head: {
     title: 'trivio',
@@ -17,7 +19,7 @@ export default {
   css: [],
 
   // Plugins to run before rendering page (https://go.nuxtjs.dev/config-plugins)
-  plugins: [],
+  plugins: ['@/plugins/icons'],
 
   // Auto import components (https://go.nuxtjs.dev/config-components)
   components: true,

@@ -3,7 +3,7 @@
     class="flex flex-col h-screen overflow-auto text-white app-body bg-brand-dark"
   >
     <app-header />
-    <Nuxt />
+    <Nuxt class="flex-1" />
   </div>
 </template>
 
