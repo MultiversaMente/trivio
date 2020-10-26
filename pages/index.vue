@@ -15,7 +15,7 @@ export default {
   components: { 'book-list': BookList },
   async asyncData({ $content }) {
     const books = await $content('books')
-      .only(['title', 'category', 'author'])
+      .only(['title', 'category', 'author', 'slug'])
       .fetch()
 
     return { books }

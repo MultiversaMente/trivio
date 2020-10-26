@@ -13,16 +13,16 @@ module.exports = {
           dark: '#17162E',
         },
         fantasy: {
-          light: '#8D082E',
-          dark: '#611A2C',
+          light: '#8D082E80',
+          dark: '#611A2C80',
         },
         scifi: {
-          light: '#406A88',
-          dark: '#263D59',
+          light: '#406A8880',
+          dark: '#263D5980',
         },
         horror: {
-          light: '#729258',
-          dark: '#2D4A31',
+          light: '#72925880',
+          dark: '#2D4A3180',
         },
       },
     },
