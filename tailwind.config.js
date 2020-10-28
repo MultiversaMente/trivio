@@ -8,11 +8,32 @@ module.exports = {
     typography: (theme) => ({
       default: {
         css: {
-          h1: {
+          'h1, h2, h3, h4, h5': {
             color: theme('colors.white'),
           },
         },
       },
+      // fantasy: {
+      //   css: {
+      //     'h1, h2, h3, h4, h5': {
+      //       'font-family': 'Goudy Mediaeval Regular, roboto, sans-serif',
+      //     },
+      //   },
+      // },
+      // scifi: {
+      //   css: {
+      //     'h1, h2, h3, h4, h5': {
+      //       'font-family': 'Futura, roboto, sans-serif',
+      //     },
+      //   },
+      // },
+      // horror: {
+      //   css: {
+      //     'h1, h2, h3, h4, h5': {
+      //       'font-family': 'D Day Stencil, roboto, sans-serif',
+      //     },
+      //   },
+      // },
     }),
     extend: {
       colors: {

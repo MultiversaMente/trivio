@@ -15,6 +15,7 @@
       <nuxt-content
         :document="page"
         class="px-8 mx-auto prose text-center text-white"
+        :class="[`prose-${page.category}`]"
       />
     </article>
     <div class="flex-none h-8" :class="[`bg--${page.category}`]" />

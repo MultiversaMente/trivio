@@ -1,50 +1,5 @@
-@import url(//db.onlinewebfonts.com/c/b037ae3de5e0396b987717092779f745?family=D+Day+Stencil);
-@import url(//db.onlinewebfonts.com/c/24b2eac64e0cb26cc8851d7fdf940b88?family=Goudy+Mediaeval);
-@import url(//db.onlinewebfonts.com/c/cced4e510c3db5d90f32c0732eddaf8a?family=Futura);
+@import './fonts.css';
 
-@font-face {
-  font-family: 'D Day Stencil';
-  src: url('../fonts/b037ae3de5e0396b987717092779f745.eot');
-  src: url('../fonts/b037ae3de5e0396b987717092779f745.eot?#iefix')
-      format('embedded-opentype'),
-    url('../fonts/b037ae3de5e0396b987717092779f745.woff2') format('woff2'),
-    url('../fonts/b037ae3de5e0396b987717092779f745.woff') format('woff'),
-    url('../fonts/b037ae3de5e0396b987717092779f745.ttf') format('truetype'),
-    url('../fonts/b037ae3de5e0396b987717092779f745.svg#D Day Stencil')
-      format('svg');
-}
-
-.text-horror {
-  font-family: 'D Day Stencil', roboto, sans-serif;
-}
-
-@font-face {
-  font-family: 'Futura';
-  src: url('../fonts/cced4e510c3db5d90f32c0732eddaf8a.eot');
-  src: url('../fonts/cced4e510c3db5d90f32c0732eddaf8a.eot?#iefix')
-      format('embedded-opentype'),
-    url('../fonts/cced4e510c3db5d90f32c0732eddaf8a.woff2') format('woff2'),
-    url('../fonts/cced4e510c3db5d90f32c0732eddaf8a.woff') format('woff'),
-    url('../fonts/cced4e510c3db5d90f32c0732eddaf8a.ttf') format('truetype'),
-    url('../fonts/cced4e510c3db5d90f32c0732eddaf8a.svg#Futura') format('svg');
-}
-
-.text-scifi {
-  font-family: 'Futura', roboto, sans-serif;
-}
-
-@font-face {
-  font-family: 'Goudy Mediaeval Regular';
-  src: url('../fonts/24b2eac64e0cb26cc8851d7fdf940b88.eot');
-  src: url('../fonts/24b2eac64e0cb26cc8851d7fdf940b88.eot?#iefix')
-      format('embedded-opentype'),
-    url('../fonts/24b2eac64e0cb26cc8851d7fdf940b88.woff2') format('woff2'),
-    url('../fonts/24b2eac64e0cb26cc8851d7fdf940b88.woff') format('woff'),
-    url('../fonts/24b2eac64e0cb26cc8851d7fdf940b88.ttf') format('truetype'),
-    url('../fonts/24b2eac64e0cb26cc8851d7fdf940b88.svg#Goudy Mediaeval Regular')
-      format('svg');
-}
-
-.text-fantasy {
-  font-family: 'Goudy Mediaeval Regular', roboto, sans-serif;
+input {
+  @apply outline-none;
 }
