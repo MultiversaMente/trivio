@@ -15,7 +15,7 @@
 }
 
 .text-horror {
-  font-family: 'D Day Stencil', roboto, 'sans-serif';
+  font-family: 'D Day Stencil', roboto, sans-serif;
 }
 
 @font-face {
@@ -30,7 +30,7 @@
 }
 
 .text-scifi {
-  font-family: 'Futura', roboto, 'sans-serif';
+  font-family: 'Futura', roboto, sans-serif;
 }
 
 @font-face {
@@ -46,5 +46,5 @@
 }
 
 .text-fantasy {
-  font-family: 'Goudy Mediaeval Regular', roboto, 'sans-serif';
+  font-family: 'Goudy Mediaeval Regular', roboto, sans-serif;
 }
