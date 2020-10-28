@@ -5,6 +5,15 @@ module.exports = {
   },
   purge: [],
   theme: {
+    typography: (theme) => ({
+      default: {
+        css: {
+          h1: {
+            color: theme('colors.white'),
+          },
+        },
+      },
+    }),
     extend: {
       colors: {
         accent: '#9C37B5',

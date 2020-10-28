@@ -1,6 +1,6 @@
 <template>
   <div
-    class="flex flex-col h-screen overflow-auto text-white app-body bg-brand-dark"
+    class="flex flex-col h-screen overflow-auto overflow-hidden text-white app-body bg-brand-dark"
   >
     <app-header />
     <Nuxt />

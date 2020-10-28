@@ -1,6 +1,9 @@
 <template>
   <nuxt-link :to="`/books/${slug}`">
-    <div class="flex flex-no-wrap items-baseline h-32 my-4">
+    <div
+      class="flex flex-no-wrap items-baseline h-32 my-4"
+      :class="[`text-${category}`]"
+    >
       <IconBase
         v-if="type === 'odd'"
         :icon-name="category"
@@ -13,7 +16,7 @@
         >
           <div class="text-center title-label__content">
             <h3 v-text="title" />
-            <p class="hidden md:block" v-text="author" />
+            <p class="hidden xl:block" v-text="author" />
           </div>
         </div>
       </div>
@@ -61,7 +64,7 @@ export default {
 <style scoped>
 .title-label {
   transition: all 1s;
-  @apply w-full overflow-hidden cursor-pointer;
+  @apply w-full overflow-hidden cursor-pointer text-2xl;
 }
 .title-label--odd {
   transition: all 1s;

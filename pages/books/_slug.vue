@@ -1,19 +1,23 @@
 <template>
-  <div>
-    <div class="banner" :class="[`banner--${page.category}`]">
+  <div class="flex flex-col h-full overflow-auto">
+    <div class="flex-none banner" :class="[`bg--${page.category}`]">
       <div
-        class="container flex items-center justify-around h-full px-4 py-8 mx-auto"
+        class="container flex items-center justify-around flex-grow h-full px-4 py-8 mx-auto"
       >
         <IconBase :icon-name="page.category" class="h-full" />
-        <div class="text-center">
+        <div class="text-center" :class="[`text-${page.category}`]">
           <h1 class="text-5xl" v-text="page.title" />
           <h1 class="text-3xl" v-text="page.author" />
         </div>
       </div>
     </div>
-    <main class="bg-main">
-      <nuxt-content :document="page" class="container px-8" />
-    </main>
+    <article class="container flex-1 py-12 mx-auto bg-main">
+      <nuxt-content
+        :document="page"
+        class="px-8 mx-auto prose text-center text-white"
+      />
+    </article>
+    <div class="flex-none h-8" :class="[`bg--${page.category}`]" />
   </div>
 </template>
 
@@ -31,13 +35,13 @@ export default {
 .banner {
   @apply w-full h-56;
 }
-.banner--fantasy {
+.bg--fantasy {
   @apply bg-gradient-to-r from-fantasy-dark via-fantasy-light to-fantasy-dark;
 }
-.banner--scifi {
+.bg--scifi {
   @apply bg-gradient-to-r from-scifi-dark via-scifi-light to-scifi-dark;
 }
-.banner--horror {
+.bg--horror {
   @apply bg-gradient-to-r from-horror-dark via-horror-light to-horror-dark;
 }
 </style>
