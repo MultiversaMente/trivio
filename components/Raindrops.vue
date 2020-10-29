@@ -1,0 +1,50 @@
+<template>
+  <div ref="rainarea" class="absolute inset-0">
+    <i v-for="i in 149" :key="i" class="rain" />
+  </div>
+</template>
+
+<script>
+export default {}
+</script>
+
+<style lang="scss">
+.rain {
+  background: white;
+  background: linear-gradient(to bottom, rgba(255, 255, 255, 0) 0%, #fff);
+  height: 50px;
+  position: absolute;
+  width: 1px;
+}
+
+$rain: 150;
+
+@for $i from 1 through $rain {
+  $top: (random(50) + 50) * 1%;
+  $left: random(100) * 1%;
+  $opacity: (random(30) + 30) * 0.01;
+  $delay: random(20) - 1s;
+
+  .rain:nth-of-type(#{$i}) {
+    animation-name: rain-#{$i};
+    animation-delay: $delay;
+    animation-duration: random(6) + 4s;
+    animation-iteration-count: infinite;
+    left: $left;
+    opacity: $opacity;
+    top: -$top;
+  }
+
+  @keyframes rain-#{$i} {
+    0% {
+      left: $left;
+      opacity: $opacity;
+      top: -$top;
+    }
+    100% {
+      opacity: 0;
+      top: $top + 40%;
+    }
+  }
+}
+</style>

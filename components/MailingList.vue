@@ -1,8 +1,8 @@
 <template>
   <div>
     <div
-      @click="modal = true"
       class="px-4 py-2 bg-transparent border border-white rounded-full cursor-pointer hover:bg-white hover:text-brand-dark"
+      @click="modal = true"
     >
       <svg class="inline-block h-6" viewBox="0 0 24 24">
         <path
@@ -14,8 +14,8 @@
     </div>
     <div
       v-if="modal"
-      @click="modal = false"
       class="absolute inset-0 z-20 flex items-center justify-center bg-black bg-opacity-75"
+      @click="modal = false"
     >
       <div class="inset-0 max-w-4xl bg-white shadow-md" @click.stop="">
         <div class="px-4 py-2 font-bold text-white bg-brand-dark">

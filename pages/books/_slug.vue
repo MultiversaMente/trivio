@@ -18,7 +18,6 @@
         :class="[`prose-${page.category}`]"
       />
     </article>
-    <div class="flex-none h-8" :class="[`bg--${page.category}`]" />
   </div>
 </template>
 
