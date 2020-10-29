@@ -1,5 +1,5 @@
 <template>
-  <div class="flex flex-col justify-between flex-1 p-10">
+  <div class="">
     <book-label
       v-for="(book, i) in books"
       :key="book.title"

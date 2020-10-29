@@ -1,10 +1,12 @@
 <template>
   <div class="container mx-auto">
     <main class="relative h-full py-8 bg-main">
-      <raindrops />
-      <div class="z-10 flex flex-col sm:flex-row">
-        <IconBase icon-name="trivio" class="flex-1 text-white" />
-        <book-list :books="books" />
+      <raindrops class="pointer-events-none" />
+      <div class="z-10 flex flex-col md:flex-row">
+        <div class="flex justify-center p-10 md:w-1/2">
+          <IconBase icon-name="trivio" class="h-full text-white" />
+        </div>
+        <book-list class="flex flex-col p-10 md:w-1/2" :books="books" />
       </div>
     </main>
   </div>
