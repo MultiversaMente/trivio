@@ -1,6 +1,6 @@
 <template>
-  <div class="container mx-auto">
-    <main class="relative h-full py-8 bg-main">
+  <div class="container mx-auto my-16 border-t border-brand-light">
+    <main class="relative h-full bg-main">
       <raindrops class="pointer-events-none" />
       <div class="z-10 flex flex-col md:flex-row">
         <div class="flex justify-center p-10 md:w-1/2">
