@@ -14,7 +14,7 @@
     </div>
     <div
       v-if="modal"
-      class="absolute inset-0 z-20 flex items-center justify-center bg-black bg-opacity-75"
+      class="fixed inset-0 z-20 flex items-center justify-center bg-black bg-opacity-75"
       @click="modal = false"
     >
       <div class="inset-0 max-w-4xl bg-white shadow-md" @click.stop="">
