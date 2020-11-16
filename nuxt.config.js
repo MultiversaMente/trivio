@@ -34,8 +34,11 @@ export default {
     '@nuxtjs/stylelint-module',
     // https://go.nuxtjs.dev/tailwindcss
     '@nuxtjs/tailwindcss',
+    '@nuxtjs/google-analytics',
   ],
-
+  googleAnalytics: {
+    id: 'G-VNPQWPVJNH',
+  },
   tailwindcss: {
     config: {
       plugins: [tailwindTypography],
