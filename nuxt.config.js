@@ -34,12 +34,12 @@ export default {
     '@nuxtjs/stylelint-module',
     // https://go.nuxtjs.dev/tailwindcss
     '@nuxtjs/tailwindcss',
-    '@nuxtjs/google-analytics',
+    // '@nuxtjs/google-analytics',
   ],
-  googleAnalytics: {
-    id: 'G-VNPQWPVJNH',
-    // id: 'UA-182938941-1',
-  },
+  // googleAnalytics: {
+  //   id: 'G-VNPQWPVJNH',
+  //   // id: 'UA-182938941-1',
+  // },
   tailwindcss: {
     config: {
       plugins: [tailwindTypography],
@@ -54,12 +54,12 @@ export default {
     '@nuxtjs/pwa',
     // https://go.nuxtjs.dev/content
     '@nuxt/content',
-    // '@nuxtjs/gtm',
+    '@nuxtjs/gtm',
   ],
 
-  // gtm: {
-  //   id: 'GTM-MFPSWZM',
-  // },
+  gtm: {
+    id: 'GTM-MFPSWZM',
+  },
   // Axios module configuration (https://go.nuxtjs.dev/config-axios)
   axios: {},
 
