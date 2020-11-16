@@ -14,7 +14,7 @@
             </div>
           </div>
           <div class="flex flex-col flex-1 p-4">
-            <nuxt-content :document="homepage" class="prose text-white" />
+            <nuxt-content :document="page" class="prose text-white" />
           </div>
         </div>
       </div>
@@ -57,12 +57,25 @@ import Raindrops from '@/components/Raindrops'
 export default {
   components: { 'book-list': BookList, raindrops: Raindrops },
   async asyncData({ $content }) {
-    const homepage = await $content('homepage').fetch()
+    const page = await $content('homepage').fetch()
     const books = await $content('books')
       .only(['title', 'category', 'author', 'slug'])
       .fetch()
 
-    return { homepage, books }
+    return { page, books }
+  },
+  head() {
+    return {
+      title: this.page.title,
+      meta: [
+        { hid: 'keywords', name: 'keywords', content: this.page.keywords },
+        {
+          hid: 'description',
+          name: 'description',
+          content: this.page.description,
+        },
+      ],
+    }
   },
 }
 </script>
