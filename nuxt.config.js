@@ -1,10 +1,14 @@
+import tailwindTypography from '@tailwindcss/typography'
+
 export default {
   // Target (https://go.nuxtjs.dev/config-target)
   target: 'static',
-
+  // router: {
+  //   base: '/trivio/',
+  // },
   // Global page headers (https://go.nuxtjs.dev/config-head)
   head: {
-    title: 'trivio',
+    title: 'Collana Trivio',
     meta: [
       { charset: 'utf-8' },
       { name: 'viewport', content: 'width=device-width, initial-scale=1' },
@@ -14,10 +18,10 @@ export default {
   },
 
   // Global CSS (https://go.nuxtjs.dev/config-css)
-  css: [],
+  css: ['@/assets/css/main.css'],
 
   // Plugins to run before rendering page (https://go.nuxtjs.dev/config-plugins)
-  plugins: [],
+  plugins: ['@/plugins/icons'],
 
   // Auto import components (https://go.nuxtjs.dev/config-components)
   components: true,
@@ -31,6 +35,11 @@ export default {
     // https://go.nuxtjs.dev/tailwindcss
     '@nuxtjs/tailwindcss',
   ],
+  tailwindcss: {
+    config: {
+      plugins: [tailwindTypography],
+    },
+  },
 
   // Modules (https://go.nuxtjs.dev/config-modules)
   modules: [
@@ -40,8 +49,13 @@ export default {
     '@nuxtjs/pwa',
     // https://go.nuxtjs.dev/content
     '@nuxt/content',
+    '@nuxtjs/gtm',
   ],
 
+  gtm: {
+    id: 'GTM-MFPSWZM',
+    pageTracking: true,
+  },
   // Axios module configuration (https://go.nuxtjs.dev/config-axios)
   axios: {},
 
