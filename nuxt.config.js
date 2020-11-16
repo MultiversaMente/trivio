@@ -54,6 +54,7 @@ export default {
 
   gtm: {
     id: 'GTM-MFPSWZM',
+    pageTracking: true,
   },
   // Axios module configuration (https://go.nuxtjs.dev/config-axios)
   axios: {},
