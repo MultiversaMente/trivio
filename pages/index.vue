@@ -14,12 +14,7 @@
             </div>
           </div>
           <div class="flex flex-col flex-1 p-4">
-            <p class="text-xl text-white">
-              Collana Trivio è la prima linea editoriale dedicata ai Librigame
-              della Casa Editrice Il Barone Games.
-              <br />In arrivo un crowdfunding che finanzierà un triplice
-              progetto.
-            </p>
+            <nuxt-content :document="homepage" class="prose text-white" />
           </div>
         </div>
       </div>
@@ -62,11 +57,12 @@ import Raindrops from '@/components/Raindrops'
 export default {
   components: { 'book-list': BookList, raindrops: Raindrops },
   async asyncData({ $content }) {
+    const homepage = await $content('homepage').fetch()
     const books = await $content('books')
       .only(['title', 'category', 'author', 'slug'])
       .fetch()
 
-    return { books }
+    return { homepage, books }
   },
 }
 </script>
