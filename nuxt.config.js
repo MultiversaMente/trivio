@@ -37,7 +37,8 @@ export default {
     '@nuxtjs/google-analytics',
   ],
   googleAnalytics: {
-    id: 'G-VNPQWPVJNH',
+    // id: 'G-VNPQWPVJNH',
+    id: 'UA-182938941-1',
   },
   tailwindcss: {
     config: {
@@ -53,8 +54,12 @@ export default {
     '@nuxtjs/pwa',
     // https://go.nuxtjs.dev/content
     '@nuxt/content',
+    '@nuxtjs/gtm',
   ],
 
+  gtm: {
+    id: 'GTM-MFPSWZM',
+  },
   // Axios module configuration (https://go.nuxtjs.dev/config-axios)
   axios: {},
 
