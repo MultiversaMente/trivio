@@ -3,6 +3,9 @@ import tailwindTypography from '@tailwindcss/typography'
 export default {
   // Target (https://go.nuxtjs.dev/config-target)
   target: 'static',
+  server: {
+    host: '',
+  },
   // router: {
   //   base: '/trivio/',
   // },
