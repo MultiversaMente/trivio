@@ -1,9 +1,9 @@
 <template>
   <div class="">
     <book-label
-      class="lg:w-1/3"
       v-for="(book, i) in books"
       :key="book.title"
+      class="lg:w-1/3"
       v-bind="book"
       :index="i"
     />
